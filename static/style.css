@@ -1,0 +1,76 @@
+body {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards
+}
+
+.submit {
+    background-color: #FFCE74;
+    /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+h4 {
+    position: relative;
+    left: 800px;
+    bottom: 400px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: black;
+    position: absolute;
+    left: 60%;
+}
+
+@keyframes slide-in {
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes slide-in {
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+#buttons {
+    position: absolute;
+    right: 240px;
+    top: 60px;
+}
+
+#upload_video {
+    position: absolute;
+    right: 40px;
+    top: 300px;
+}
+
+#video_requirements {
+    position: absolute;
+    top: 600px;
+    font-weight: 500;
+    font-size: 30px;
+    left: 20px;
+}
+
+#javelin_vector {
+    position: absolute;
+    left: 10px;
+    width: 750px;
+    height: 500px;
+    top: 0px;
+}

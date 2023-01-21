@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #elbow {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+        
+        #video {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Analysed Video</h1>
+    <div id="video">
+        <video controls="controls" autoplay="autoplay">
+			<source src=" static/uploads/analysed/analysed_video.mp4",  type="video/mp4", ></source>
+            Your browser does not support the video tag
+		</video>
+
+    </div>
+    <div id="elbow">
+        <h3>Elbow Angle</h3>
+        <img src="static/uploads/analysed/elbow_graph.jpg" alt="Elbow Angle vs Frame Graph">
+    </div>
+    <div id="knee">
+        <h3>Knee Angle</h3>
+        <img src="static/uploads/analysed/knee_graph.jpg" alt="Knee Angle vs Frame Graph">
+    </div>
+    <div id="hip">
+        <h3>Hip Angle</h3> <img src="static/uploads/analysed/hip_graph.jpg" alt="Hip Angle vs Frame Graph">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+
+<head>
+    <title>Javelin Throw Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<h2>Select a video to analyse and play</h2>
+<p>
+    {% with messages = get_flashed_messages() %} {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %} {% endwith %}
+</p>
+{% if filename %}
+<div style="margin: 10px auto;" id="upload_video">
+    <video autoplay="autoplay" controls="controls" preload="preload">
+			<source src="{{ url_for('display_video', filename=filename) }}" type="video/mp4"></source>
+		</video>
+</div>
+{% endif %}
+<div id="buttons">
+    <a href="/analyse"><input type="submit" value="Analyse" class="submit"></a>
+
+    <form method="post" action="/" enctype="multipart/form-data">
+        <dl>
+            <p>
+                <input type="file" name="file" autocomplete="off" required class="submit">
+            </p>
+        </dl>
+        <p>
+            <input type="submit" value="Upload" class="submit">
+        </p>
+
+</div>
+<div>
+    <img src="static/javelin_vector.jpg" alt="Javelin Vector Image" id="javelin_vector">
+</div>
+<div id="video_requirements">
+    <h3>Analysis includes</h3>
+    <img src="static/javelin_throw_analysis_pic.jpg" alt="Analysed">
+    <h4>Tracking of javelin Angle </h4>
+    <h4>Tracking of elbow, hip and knee angles</h4>
+</div>
+
+</form>
