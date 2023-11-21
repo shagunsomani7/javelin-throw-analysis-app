@@ -2,21 +2,24 @@
 
 # Javelin Throw Analysis App
 
-This application takes input of the the video of the javelin throw from user and do tracking and analysis of the javelin angle from the horizontal and the elbow , knee and hip angles of the athlete
+This application takes the input of the video of the javelin throw from the user and does tracking and analysis of the javelin angle from the horizontal and  also measures the elbow, knee, and hip angles, which are important parameters for the javelin throw athlete during the run-ups.
 
-It would help athletes in analysing their javelin throws and imporve their game.
+It would help athletes in analyzing their javelin throws and improve their game.
 
-* Computer Vision- Artifical Intelligence to analyse the video
+Tech Used -
+* Python
+* Mediapipe library
+* Computer Vision(OpenCV)- Artificial Intelligence to analyze the video
 * Flask framework for backend
 
 ## Screenshots
 Home Page
 ![App Screenshot](https://i.imgur.com/vyf1KKh.jpeg)
-Analysed video the user which shows the javelin angle and elbow, knee and hip angles of the athlete
+Analyzed video the user which shows the javelin angle and elbow, knee, and hip angles of the athlete
 
 ![App Screenshot](https://i.imgur.com/SlhFA9s.jpg)
 
-Elbow Angle Grpahs generated after anaylsis
+Elbow Angle Grpahs generated after analysis
 
 ![App Screenshot](https://i.imgur.com/ph4yCza.jpg)
 
